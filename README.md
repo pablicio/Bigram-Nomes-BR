@@ -9,11 +9,10 @@ de dados do IBGE, tanto masculinos quanto femininos.
 
 ---
 
-## ?? O que foi feito
+## O que foi feito
 
 1. **Coleta de dados**  
-   - Foram utilizados dois arquivos CSV com nomes brasileiros mais comuns (masculinos e femininos)  
-     disponibilizados pelo IBGE.
+   - Foram utilizados dois arquivos CSV com nomes brasileiros mais comuns (masculinos e femininos) disponibilizados pelo IBGE.
    - Os arquivos foram combinados em um único dataset e pré-processados para conter apenas os nomes.
 
 2. **Pré-processamento**  
@@ -38,7 +37,7 @@ de dados do IBGE, tanto masculinos quanto femininos.
 
 ---
 
-## ?? Estrutura do Código
+## Estrutura do Código
 
 - **Carregamento de dados**: leitura e unificação dos CSVs do IBGE.
 - **Tokenização**: criação de mapeamentos `stoi` e `itos`.
@@ -48,52 +47,49 @@ de dados do IBGE, tanto masculinos quanto femininos.
 
 ---
 
-## ?? Créditos
+## Créditos
 
 Este projeto é baseado e adaptado da aula:
 
 **Building Makemore - Part 2: MLP**  
 por **Andrej Karpathy**  
 
-?? Disponível no YouTube:  
+Disponível no YouTube:  
 [https://www.youtube.com/watch?v=TCH_1BHY58I](https://www.youtube.com/watch?v=TCH_1BHY58I)  
 
-?? Notebook original no Google Colab:  
+Notebook original no Google Colab:  
 [https://colab.research.google.com/drive/1YIfmkftLrz6MPTOO9Vwqrop2Q5llHIGK?usp=sharing#scrollTo=TQUMmgRrdRIA](https://colab.research.google.com/drive/1YIfmkftLrz6MPTOO9Vwqrop2Q5llHIGK?usp=sharing#scrollTo=TQUMmgRrdRIA)  
 
 ---
 
-## ?? Fonte dos Nomes Brasileiros
+## Fonte dos Nomes Brasileiros
 
-Os nomes utilizados foram obtidos do repositório **[MedidaSP/nomes-brasileiros-ibge](https://github.com/MedidaSP/nomes-brasileiros-ibge)**, que contém:
+Os nomes utilizados foram obtidos do repositório [MedidaSP/nomes-brasileiros-ibge](https://github.com/MedidaSP/nomes-brasileiros-ibge), que contém:
 
 - **`README.md`**  
   Breve descrição do projeto, mencionando que se trata de uma lista dos nomes mais populares no Brasil por gênero, extraída do IBGE (com seção *TODO* ainda não preenchida).
 
 - **`ibge-fem-10000.csv`**  
-  Lista com os **10.000 nomes femininos mais frequentes** no Brasil, incluindo as colunas:  
+  Lista com os 10.000 nomes femininos mais frequentes no Brasil, incluindo as colunas:  
   `nome`, `regiao`, `freq`, `rank`, `sexo`.
 
 - **`ibge-mas-10000.csv`**  
-  Lista com os **10.000 nomes masculinos mais frequentes** no Brasil, com as mesmas colunas:  
+  Lista com os 10.000 nomes masculinos mais frequentes no Brasil, com as mesmas colunas:  
   `nome`, `regiao`, `freq`, `rank`, `sexo`.
 
 Esses arquivos fornecem uma listagem abrangente dos nomes mais comuns no país, separados por gênero, conforme dados do IBGE.
 
 ---
 
-## ?? Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Python 3
 - PyTorch
-- Pandas (para manipulação inicial dos dados)
-- NumPy
 
 ---
 
-## ?? Observação
+## Observação
 
 O modelo aqui apresentado é uma implementação **didática** para entender o  
 funcionamento de embeddings, MLP e geração de sequências de texto.  
 Não é otimizado para produção, mas serve como base para experimentos.
-
